@@ -1,0 +1,77 @@
+@import "globals";
+
+// EMAIL CALL-OUT
+
+.emailcallout {
+    background-color: $primary-blue;
+    margin: 100px auto 0;
+    text-align: center;
+    
+    
+    div {
+        padding: 40px 0 80px;
+        margin: 0 auto;
+        width: 400px;
+        @media screen and (min-width:375px) and (max-width: 768px) {
+            width: 80%;
+        }
+    }
+
+    h2, p {
+        color: #faf5f5;
+    }
+
+    p {
+        font-size: 0.75em;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        letter-spacing: 1px;
+        margin: 40px 0;
+    }
+
+    input {
+        width: 60%;
+        margin-right: 20px;
+        @include button(#ffffff, #000000, 12px, 15px);
+
+        @media screen and (min-width:375px) and (max-width: 768px) {
+            width: 80%;
+            margin: 0 0 30px;
+        }
+    }
+
+    ::placeholder {
+        color:#ccc;
+    }
+
+    button {
+        @include button($primary-red, #ffffff, 12px, 20px);
+
+        @media screen and (min-width:375px) and (max-width: 768px) {
+            width: 80%;
+        }
+        &:hover {
+            @include button(#ffffff, $primary-red, 12px, 20px);
+            border: 2px solid $primary-red;
+        }
+    }
+
+    .invalid {
+        border: 2px solid $primary-red;
+    }
+
+    .invalid-feedback {
+        position: relative;
+        font-style: italic;
+        font-size: 0.7em;
+        left: 12.5px;
+        top: -2px;
+        padding: 10px;
+        margin: 0;
+        width: 240px;
+        color: #f4f4f4;
+    }
+}

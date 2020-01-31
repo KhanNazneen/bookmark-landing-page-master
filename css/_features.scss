@@ -1,0 +1,140 @@
+@import "globals";
+
+.features {
+    margin: 80px 0 260px 0 ;
+    position: relative;
+    &-aim {
+        display: grid;
+        justify-items: center;
+
+        p {
+            width: 40%;
+            text-align: center;
+            font-size: 0.9em;
+            letter-spacing: 0.8px;
+
+            @media screen and (min-width: 375px) and (max-width: 768px) {
+                width: 80%;
+            }
+        }
+
+        &-bg {
+            position: absolute;
+            z-index: -1;
+            width: 42%;
+            height: 350px;
+            left: 0;
+            top: 58%;
+            background-color: $primary-blue;
+            border-radius:  0 175px 175px 0;
+
+            @media screen and (min-width: 375px) and (max-width: 512px) {
+                width: 80%;
+                height: 240px;
+                border-bottom-right-radius: 150px; 
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 900px) {
+                width: 80%;
+                top: 50%;
+            }
+        }
+
+        &-btn {
+            position: absolute;
+            left: 59.27%;
+            top: 84%;
+
+            @include button($primary-blue, #fdfdfd, 10px, 25px);
+
+            @media screen and (min-width: 375px) and (max-width: 512px) {
+                top: 115%;
+                left: 35%;
+                margin: 0 auto;
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 900px) {
+                top: 120%;
+                left: 40%;
+            }
+            &:hover {
+                background-color: #ffffff;
+                color: $primary-blue;
+            }
+        }
+
+        &-lists {
+            display: flex;
+
+            @media screen and (max-width: 750px) {
+                flex-direction: column;
+                width: 80%;
+            }
+
+            li {
+                font-size: 0.9em;
+                color: $neutral-grayish-blue;
+                padding: 20px 3em;
+                border-bottom: 1px solid rgba($neutral-grayish-blue, 0.5);
+                cursor: pointer;
+                letter-spacing: 0.2px;
+
+                @media screen and (min-width: 375px) and (max-width: 768px) {
+                    text-align: center;
+                }
+
+                &:hover {
+                    color: $primary-red;
+                }
+            }
+        }
+    }
+
+}
+
+li[aria-selected='true'] {
+    color: $neutral-dark-blue;
+    border-bottom: 4px solid $primary-red;
+}
+
+div[aria-hidden='true'] {
+    display: none;
+}
+
+.tab {
+    margin: 5% 12% 10%;
+    display: grid;
+    grid-template-columns: 52% auto;
+    gap: 10%;
+    align-items: center;
+
+    @media screen and (min-width: 375px) and (max-width: 768px) {
+        margin: 10%;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 30%;
+    }
+
+    &-image {
+        img {
+            height: 100%;
+            width: auto;
+            min-height: 250px;
+
+            @media screen and (min-width: 375px) and (max-width: 768px) {
+                width: 100%;
+                min-width: 300px;
+                height: auto;
+            }
+        }
+    }
+
+    &-content {
+        @media screen and (min-width: 375px) and (max-width: 768px) {
+            text-align: center;
+        }
+        p {
+            font-size: 0.9em;
+        }
+    }
+}

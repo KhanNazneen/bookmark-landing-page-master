@@ -1,0 +1,74 @@
+@import "globals";
+
+footer {
+    background-color: $neutral-dark-blue;
+    color: #f4f4f4;
+
+    .footer-nav {
+        display: grid;
+        grid-template-columns: 20% auto;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+
+        @media screen and (min-width:375px) and (max-width: 768px) {
+            grid-template-columns: 100%;
+            margin: 0 auto;
+        }
+
+        img {
+            @media screen and (min-width:375px) and (max-width: 768px) {
+                margin: 20px auto;
+            }
+        }
+
+        &-lists {
+            display: grid;
+            grid-template-columns: 90% auto;
+            align-items: center;
+
+            @media screen and (min-width:375px) and (max-width: 768px) {
+                grid-template-columns: 100%;
+                margin: 0 auto;
+            }
+
+            ul {
+                display: flex;
+                @media screen and (min-width:375px) and (max-width: 768px) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
+            .navs {
+                li {
+                    font-size: 0.8em;
+                    padding-right: 30px;
+
+                    @media screen and (min-width:375px) and (max-width: 768px) {
+                        font-size: 1em;
+                        padding: 20px 0;
+                    }
+
+                    &:hover {
+                        color: $primary-red;
+                    }
+                }
+            }
+
+            .socials {
+                justify-content: space-between;
+
+                @media screen and (min-width:375px) and (max-width: 768px) {
+                    flex-direction: row;
+                    margin-top: 20px;
+                }
+
+                & :hover {
+                    fill: $primary-red;
+                }
+            }
+        }
+    }
+}
