@@ -5,7 +5,11 @@
     width: 40%;
     margin: 220px auto 100px;
 
-    @media screen and (min-width:375px) and (max-width: 768px) {
+    @media screen and (max-width: 1023px) {
+        width: 50%;
+    }   
+
+    @media screen and (max-width: 768px) {
         width: 80%;
     }   
 

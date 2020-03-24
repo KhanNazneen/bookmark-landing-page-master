@@ -13,8 +13,8 @@
             font-size: 0.9em;
             letter-spacing: 0.8px;
 
-            @media screen and (min-width: 375px) and (max-width: 768px) {
-                width: 80%;
+            @media only screen and (max-width: 768px) {
+                width: 70%;
             }
         }
 
@@ -28,16 +28,12 @@
             background-color: $primary-blue;
             border-radius:  0 175px 175px 0;
 
-            @media screen and (min-width: 375px) and (max-width: 512px) {
-                width: 80%;
-                height: 240px;
-                border-bottom-right-radius: 150px; 
+            @media screen and (max-width: 968px) {
+                width: 58%;
+                top: 55%;
+                max-height: 300px;
             }
 
-            @media screen and (min-width: 768px) and (max-width: 900px) {
-                width: 80%;
-                top: 50%;
-            }
         }
 
         &-btn {
@@ -47,13 +43,13 @@
 
             @include button($primary-blue, #fdfdfd, 10px, 25px);
 
-            @media screen and (min-width: 375px) and (max-width: 512px) {
-                top: 115%;
-                left: 35%;
+            @media screen and (max-width: 1128px) {
+                top: 90%;
+                left: 74%;
                 margin: 0 auto;
             }
 
-            @media screen and (min-width: 768px) and (max-width: 900px) {
+            @media screen and (max-width: 968px) {
                 top: 120%;
                 left: 40%;
             }
@@ -66,7 +62,7 @@
         &-lists {
             display: flex;
 
-            @media screen and (max-width: 750px) {
+            @media screen and (max-width: 768px) {
                 flex-direction: column;
                 width: 80%;
             }
@@ -79,7 +75,7 @@
                 cursor: pointer;
                 letter-spacing: 0.2px;
 
-                @media screen and (min-width: 375px) and (max-width: 768px) {
+                @media screen and (max-width: 768px) {
                     text-align: center;
                 }
 
@@ -108,7 +104,14 @@ div[aria-hidden='true'] {
     gap: 10%;
     align-items: center;
 
-    @media screen and (min-width: 375px) and (max-width: 768px) {
+    @media screen and (max-width: 1128px) {
+        margin-right: 0;
+        display: grid;
+        grid-template-columns: 68% auto;
+        gap: 20px;
+    }
+
+    @media screen and (max-width: 968px) {
         margin: 10%;
         display: grid;
         grid-template-columns: 100%;
@@ -121,16 +124,16 @@ div[aria-hidden='true'] {
             width: auto;
             min-height: 250px;
 
-            @media screen and (min-width: 375px) and (max-width: 768px) {
+            @media screen and (max-width: 968px) {
                 width: 100%;
-                min-width: 300px;
+                max-width: 480px;
                 height: auto;
             }
         }
     }
 
     &-content {
-        @media screen and (min-width: 375px) and (max-width: 768px) {
+        @media screen and (max-width: 968px) {
             text-align: center;
         }
         p {

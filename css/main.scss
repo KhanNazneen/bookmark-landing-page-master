@@ -120,7 +120,16 @@ body {
     }
 }
 
-@media screen and (min-width:375px) and (max-width: 768px) {
+@media screen and (max-width: 1115px) {
+    .nav {
+        width: 85%;
+    
+        &-lists {
+            width: 60%;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
     header {
         z-index: 3;
     }

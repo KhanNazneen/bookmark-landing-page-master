@@ -9,7 +9,7 @@
     &-content {
         width: 40%;
         margin-bottom: 30px;
-        @media screen and (min-width: 375px) and (max-width: 768px) {
+        @media screen and (max-width: 968px) {
             width: 60%;
             margin: 30px auto;
         }   
@@ -22,7 +22,7 @@
 
     &-extensions {
         display: flex;
-        @media screen and (min-width: 375px) and (max-width: 768px) {
+        @media screen and (max-width: 968px) {
             flex-direction: column;
         }
 
@@ -34,12 +34,12 @@
             padding: 40px 0 20px;
             position: relative;
 
-            @media screen and (min-width: 375px) and (max-width: 700px) {
+            @media screen and (max-width: 968px) {
                 width: 80%;
                 margin: 0 auto;
             }
 
-            @media screen  and (max-width:768px) {
+            @media screen and (max-width: 968px) {
                 width: auto;
             }
 

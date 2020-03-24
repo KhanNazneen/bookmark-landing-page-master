@@ -12,13 +12,17 @@ footer {
         margin: 0 auto;
         padding: 20px 0;
 
-        @media screen and (min-width:375px) and (max-width: 768px) {
+        @media screen and (max-width: 1023px) {
+            gap: 10%;
+        }
+
+        @media screen and (max-width: 968px) {
             grid-template-columns: 100%;
             margin: 0 auto;
         }
 
         img {
-            @media screen and (min-width:375px) and (max-width: 768px) {
+            @media screen and (max-width: 968px) {
                 margin: 20px auto;
             }
         }
@@ -28,14 +32,18 @@ footer {
             grid-template-columns: 90% auto;
             align-items: center;
 
-            @media screen and (min-width:375px) and (max-width: 768px) {
+            @media screen and (max-width: 1023px) {
+                grid-template-columns: 86% auto;
+            }
+    
+            @media screen and (max-width: 968px) {
                 grid-template-columns: 100%;
                 margin: 0 auto;
             }
 
             ul {
                 display: flex;
-                @media screen and (min-width:375px) and (max-width: 768px) {
+                @media screen and (max-width: 968px) {
                     flex-direction: column;
                     align-items: center;
                 }
@@ -46,7 +54,7 @@ footer {
                     font-size: 0.8em;
                     padding-right: 30px;
 
-                    @media screen and (min-width:375px) and (max-width: 768px) {
+                    @media screen and (max-width: 968px) {
                         font-size: 1em;
                         padding: 20px 0;
                     }
@@ -60,7 +68,7 @@ footer {
             .socials {
                 justify-content: space-between;
 
-                @media screen and (min-width:375px) and (max-width: 768px) {
+                @media screen and (max-width: 968px) {
                     flex-direction: row;
                     margin-top: 20px;
                 }
