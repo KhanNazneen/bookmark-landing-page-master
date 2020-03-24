@@ -1,12 +1,12 @@
 @import "globals";
-// DOWNLOAD EXTENSIONS SECTION
 
-.downloads {
+// DOWNLOAD EXTENSIONS SECTION
+#downloads {
     display: grid;
     justify-items: center;
     text-align: center;
 
-    &-content {
+    .downloads-content {
         width: 40%;
         margin-bottom: 30px;
         @media screen and (max-width: 968px) {
@@ -20,7 +20,7 @@
         }
     }
 
-    &-extensions {
+    .downloads-extensions {
         display: flex;
         @media screen and (max-width: 968px) {
             flex-direction: column;

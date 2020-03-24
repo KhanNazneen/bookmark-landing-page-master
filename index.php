@@ -14,7 +14,7 @@
 <body>
   <header class="header">
     <nav class="nav">
-      <a href="javascript:void(0)">
+      <a href="/">
         <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd">
             <path class="path-1"
@@ -29,9 +29,9 @@
       </a>
       
       <ul class="nav-lists">
-        <li><a href="javascript:void(0)">Features</a></li>
+        <li><a href="#features">Features</a></li>
         <li><a href="javascript:void(0)">Pricing</a></li>
-        <li><a href="javascript:void(0)">Contact</a></li>
+        <li><a href="#emailcallout">Contact</a></li>
         <button class="login">Login</button>
 
         <ul class="nav-social-link">
@@ -53,7 +53,7 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <section id="hero">
     <div class="hero-image">
       <img src="./images/illustration-hero.svg" alt="hero-image">
       <div class="hero-image-bg"></div>
@@ -71,7 +71,7 @@
   </section>
 
   <main>
-    <section class="features">
+    <section id="features">
       <div class="features-aim">
         <h2>Features</h2>
         <p>
@@ -132,7 +132,7 @@
 
     </section>
 
-    <section class="downloads">
+    <section id="downloads">
       <div class="downloads-content">
         <h2>Download the extension</h2>
         <p>
@@ -169,7 +169,7 @@
 
     </section>
 
-    <section class="faqs">
+    <section id="faqs">
       <div class="faqs-info">
         <h2>Frequently Asked Questions</h2>
         <p>
@@ -232,7 +232,7 @@
     </section>
   </main>
 
-  <section class="emailcallout">
+  <section id="emailcallout">
     <div>
       <p>35,000+ already joined</p>
       <h2>Stay up-to-date with what we’re doing</h2>
@@ -251,9 +251,9 @@
 
       <div class="footer-nav-lists">
         <ul class="navs">
-          <li><a href="javascript:void(0)">Features</a></li>
+          <li><a href="#features">Features</a></li>
           <li><a href="javascript:void(0)">Pricing</a></li>
-          <li><a href="javascript:void(0)">Contact</a></li>
+          <li><a href="#emailcallout">Contact</a></li>
         </ul>
     
         <ul class="socials">
