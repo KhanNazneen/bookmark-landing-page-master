@@ -170,7 +170,6 @@ span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -250,8 +249,13 @@ span {
   }
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 #price-layout {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto 70px;
   display: -ms-grid;
   display: grid;
@@ -263,7 +267,7 @@ span {
           align-items: center;
 }
 
-@media screen and (max-width: 829px) {
+@media screen and (max-width: 929px) {
   #price-layout {
         grid-template-areas: "price" "basic" "professional" "master";
   }
@@ -301,9 +305,10 @@ span {
   width: 100%;
   padding: 0 30px;
   border-radius: 7px;
+  max-width: 300px;
 }
 
-@media screen and (max-width: 829px) {
+@media screen and (max-width: 929px) {
   #price-layout .plans {
     max-width: 300px;
   }
@@ -360,7 +365,7 @@ span {
   background-color: #fff;
 }
 
-@media screen and (max-width: 829px) {
+@media screen and (max-width: 929px) {
   #price-layout .basic {
     -ms-grid-column-align: center;
         justify-self: center;
@@ -388,7 +393,7 @@ span {
   background-color: #fff;
 }
 
-@media screen and (max-width: 829px) {
+@media screen and (max-width: 929px) {
   #price-layout .master {
     -ms-grid-column-align: center;
         justify-self: center;

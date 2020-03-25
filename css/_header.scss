@@ -1,4 +1,4 @@
-// @import "./globals";
+@import "./globals";
 
 .header{
     height: 22vh;
@@ -84,7 +84,7 @@
             background-color: rgba($neutral-dark-blue, 0.9);
             color: #f4f4f4;
             display: flex;
-            text-align: center;
+            // text-align: center;
             flex-direction: column;
             justify-content: start;
             position: absolute;
