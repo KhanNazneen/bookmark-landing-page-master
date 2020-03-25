@@ -4,11 +4,9 @@
     display: grid;
     width: 40%;
     margin: 220px auto 100px;
-
     @media screen and (max-width: 1023px) {
         width: 50%;
     }   
-
     @media screen and (max-width: 768px) {
         width: 80%;
     }   
@@ -27,7 +25,6 @@
 
     .faqs-info {
         text-align: center;
-
         p {
             font-size: 0.9em;
             padding: 0 30px;
@@ -35,24 +32,20 @@
     }
 
     .faqs-lists {
+        li { text-align: left;}
         .question {
             border-top: 1px solid rgba($neutral-grayish-blue, 0.5);
             padding: 16px 16px 16px 0;
-
             &:nth-last-child(2) {
                 border-bottom: 1px solid rgba($neutral-grayish-blue, 0.5);
             }
-
             &:hover {
                 color: $primary-red;
             }
-
         }
-
         svg {
             float: right;
         }
-
         .active {
             color: inherit;
             // transition: all 0.4s ease;

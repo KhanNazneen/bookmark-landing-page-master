@@ -1,0 +1,111 @@
+#price-layout {
+    max-width: 800px;
+    margin: 0 auto 70px;
+    display: grid;
+    grid-template-areas: 
+        "price price price"
+        "basic professional master";
+    row-gap: 50px;
+    justify-items: center;
+    align-items: center;
+    @media screen and (max-width: 829px) {
+        grid-template-areas: 
+            "price"
+            "basic"
+            "professional"
+            "master";
+    }
+    button {
+        border: 0;
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px 0;
+        margin: 20px 0;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: 0.2s ease 0s;
+    }    
+    .price-toggle {
+        grid-area: price;
+        input {
+            margin: 0;
+        }
+    }
+    .plans {
+        box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.10);
+        // box-shadow: 0 0 5px 5px rgba(243, 243, 243, 0.1);
+        width: 100%;
+        padding: 0 30px;
+        border-radius: 7px;
+        @media screen and (max-width: 829px) {
+            max-width: 300px;
+        }
+        .features {
+            li{
+            border-top: 1px solid rgba(220, 220, 220, 0.4);
+            font-size: 12px;
+            letter-spacing: 1px;
+            padding: 10px;
+            }
+            .bottom-border {
+                border-bottom: 1px solid rgba(220, 220, 220, 0.4);
+            }
+        }
+        .price {
+            font-size: 60px;
+            margin: 0;
+            &::before {
+                position: relative;
+                content: "$";
+                font-size: 2rem;
+                bottom: 10px;
+            }
+        }
+        .blue-button {
+            background-color: #fff;
+            color: hsl(237, 63%, 64%);
+            &:hover {
+                letter-spacing: 2px;
+            }
+        }
+        .white-button {
+            color: #fff;
+            background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+            &:hover {
+                letter-spacing: 2px;
+            }
+        }
+    }
+    .basic {
+        grid-area: basic;
+        justify-self: right;
+        background-color: #fff;
+        @media screen and (max-width: 829px) {
+            justify-self: center;
+        }
+    }
+    .professional {
+        grid-area: professional;
+        color: #fff;
+        background-image: linear-gradient( hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+        height: 380px;
+        z-index: 1;
+        padding-top: 18px !important;
+    }
+    .master {
+        grid-area: master;
+        justify-self: left;
+        background-color: #fff;
+        @media screen and (max-width: 829px) {
+            justify-self: center;
+        }
+    }
+}
+
+main > div {
+    box-sizing: border-box;
+    border-radius: 3px;
+}

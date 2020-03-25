@@ -1,4 +1,4 @@
-@import "globals";
+@import "./globals";
 
 footer {
     background-color: $neutral-dark-blue;
@@ -58,9 +58,14 @@ footer {
                         font-size: 1em;
                         padding: 20px 0;
                     }
-
                     &:hover {
                         color: $primary-red;
+                    }
+                    a {
+                        color: #f4f4f4;
+                        font-size: 15px;
+                        font-weight: 400;
+                        text-decoration: none;
                     }
                 }
             }

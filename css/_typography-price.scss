@@ -22,13 +22,13 @@ body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 
-    background: url(/images/bg-top.svg),
-                url(/images/bg-bottom.svg);
-    background-repeat: no-repeat;
-    background-position: top right,
-                          bottom left;
+    // background: url(/images/price/bg-top.svg),
+    //             url(/images/price/bg-bottom.svg);
+    // background-repeat: no-repeat;
+    // background-position: top right,
+    //                       bottom left;
     background-size: 20%;
-    background-color: var(--bg-color);
+    // background-color: var(--bg-color);
 
 }
 

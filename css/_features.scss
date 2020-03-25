@@ -49,7 +49,7 @@
                 color: $primary-blue;
             }
         }
-        &-lists {
+        &-tablists {
             display: flex;
             @media screen and (max-width: 768px) {
                 flex-direction: column;
@@ -68,7 +68,7 @@
                 &:hover {
                     color: $primary-red;
                 }
-                &-[aria-selected='true'] {
+                &[aria-selected='true'] {
                     color: $neutral-dark-blue;
                     border-bottom: 4px solid $primary-red;
                 }
@@ -120,8 +120,12 @@ div[aria-hidden='true'] {
         @media screen and (max-width: 968px) {
             text-align: center;
         }
+        h2 {
+            text-align: left;
+        }
         p {
             font-size: 0.9em;
+            text-align: left;
         }
     }
 }

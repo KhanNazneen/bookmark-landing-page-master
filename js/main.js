@@ -61,7 +61,7 @@ questions.forEach((list, i) => {
 const re = /[\w]+@(\w+\.)+[a-zA-Z]+/;
 
 let submitBtn = document.getElementById('submit-btn')
-
+console.log(submitBtn);
 submitBtn.addEventListener('click', event => {
     event.preventDefault();
 
